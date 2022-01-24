@@ -6,7 +6,7 @@
 /*   By: adubeau <marvin@42quebec.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 19:35:19 by adubeau           #+#    #+#             */
-/*   Updated: 2022/01/24 08:56:49 by adubeau          ###   ########.fr       */
+/*   Updated: 2022/01/24 10:53:44 by adubeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,9 +117,9 @@ int	main(int argc, char **argv)
 	ft_index(str_a, str_t, i);
 	if (i == 3)
 		ft_sort3(str_a);
-	else if (i == 5)
-		ft_bubble(str_a, str_b, i);
-	else
+	else if (i == 100 || i == 500)
 		ft_radix(str_a, str_b, i);
+	else
+		ft_bubble(str_a, str_b, i);
 	return (1);
 }

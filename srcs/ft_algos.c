@@ -6,7 +6,7 @@
 /*   By: adubeau <marvin@42quebec.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 19:30:32 by adubeau           #+#    #+#             */
-/*   Updated: 2021/12/15 15:43:26 by adubeau          ###   ########.fr       */
+/*   Updated: 2022/01/24 10:58:36 by adubeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ int	ft_bubble(int *str_a, int *str_b, int len)
 
 	c = 0;
 	h = 0;
+	if (ft_is_sorted(str_a, len))
+		return (0);
 	while (c < len - 2)
 	{
 		j = ft_smallest(str_a, c, len);
